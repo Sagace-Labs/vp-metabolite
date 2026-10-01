@@ -1,0 +1,10 @@
+# Python 3.11.11
+vp-core @ git+https://github.com/Sagace-Labs/vp-core.git@e49310b74a164bc30974053af2ab1a5236f46161
+numpy==2.4.6
+pandas==3.0.5
+rdkit==2026.3.5
+scikit-learn==1.9.0
+joblib==1.5.3
+scipy==1.17.1
+pyarrow==25.0.1
+xgboost==3.2.0

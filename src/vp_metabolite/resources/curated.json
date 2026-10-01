@@ -1,0 +1,491 @@
+[
+  {
+    "name": "aliphatic_hydroxylation",
+    "reaction_class": "C_hydroxylation",
+    "smirks": "[C;X4;!$(C[#7,#8,#16]);H1,H2,H3:1]>>[C:1][OX2H]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 1.0,
+    "probe": [
+      "CCCC",
+      "CCCCO"
+    ]
+  },
+  {
+    "name": "benzylic_hydroxylation",
+    "reaction_class": "C_hydroxylation",
+    "smirks": "[C;X4;H1,H2,H3:1][c:2]>>[C:1]([OX2H])[c:2]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 1.6,
+    "probe": [
+      "Cc1ccccc1",
+      "OCc1ccccc1"
+    ]
+  },
+  {
+    "name": "aromatic_hydroxylation",
+    "reaction_class": "C_hydroxylation",
+    "smirks": "[c;H1:1]>>[c:1][OX2H]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 1.5,
+    "probe": [
+      "c1ccccc1",
+      "Oc1ccccc1"
+    ]
+  },
+  {
+    "name": "alpha_hydroxylation_at_heteroatom",
+    "reaction_class": "C_hydroxylation",
+    "smirks": "[C;X4;H1,H2,H3:1][#7,#8,#16;X2,X3:2]>>[C:1]([OX2H])[*:2]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 0.8,
+    "probe": [
+      "CN(C)C",
+      "OCN(C)C"
+    ]
+  },
+  {
+    "name": "n_dealkylation",
+    "reaction_class": "N_dealkylation",
+    "smirks": "[#7:1][C;X4;H1,H2,H3:2]>>[#7:1].[C:2]=[OX1]",
+    "site_map": 2,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 2.0,
+    "probe": [
+      "CN(C)c1ccccc1",
+      "CNc1ccccc1"
+    ]
+  },
+  {
+    "name": "o_dealkylation",
+    "reaction_class": "O_dealkylation",
+    "smirks": "[#8;X2:1][C;X4;H1,H2,H3:2]>>[#8:1].[C:2]=[OX1]",
+    "site_map": 2,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 1.4,
+    "probe": [
+      "COc1ccccc1",
+      "Oc1ccccc1"
+    ]
+  },
+  {
+    "name": "s_dealkylation",
+    "reaction_class": "S_dealkylation",
+    "smirks": "[#16;X2:1][C;X4;H1,H2,H3:2]>>[#16:1].[C:2]=[OX1]",
+    "site_map": 2,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "CSc1ccccc1",
+      "Sc1ccccc1"
+    ]
+  },
+  {
+    "name": "s_oxidation",
+    "reaction_class": "S_oxidation",
+    "smirks": "[#16;X2;$([S]([#6])[#6]):1]>>[S:1]=[OX1]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP",
+      "FMO"
+    ],
+    "prior": 0.9,
+    "probe": [
+      "CSCc1ccccc1",
+      "O=S(C)Cc1ccccc1"
+    ]
+  },
+  {
+    "name": "s_dioxidation",
+    "reaction_class": "S_oxidation",
+    "smirks": "[$([#16X3](=[OX1])([#6])[#6]):1]=[OX1:2]>>[S:1](=[O:2])=[OX1]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP",
+      "FMO"
+    ],
+    "prior": 0.4,
+    "probe": [
+      "O=S(C)Cc1ccccc1",
+      "O=S(=O)(C)Cc1ccccc1"
+    ]
+  },
+  {
+    "name": "n_oxidation",
+    "reaction_class": "N_oxidation",
+    "smirks": "[NX3;H0;!$(N[#6,#16]=[#8,#16,#7]);!$(N=*):1]>>[N+:1][O-]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP",
+      "FMO"
+    ],
+    "prior": 0.6,
+    "probe": [
+      "CN(C)C",
+      "C[N+](C)(C)[O-]"
+    ]
+  },
+  {
+    "name": "aromatic_n_oxidation",
+    "reaction_class": "N_oxidation",
+    "smirks": "[nX2:1]>>[n+:1][O-]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP",
+      "FMO"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "c1ccncc1",
+      "[O-][n+]1ccccc1"
+    ]
+  },
+  {
+    "name": "n_hydroxylation",
+    "reaction_class": "N_oxidation",
+    "smirks": "[NX3;H1,H2;!$(N[#6,#16]=[#8,#16,#7]):1]>>[N:1][OX2H]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP",
+      "FMO"
+    ],
+    "prior": 0.4,
+    "probe": [
+      "Nc1ccccc1",
+      "ONc1ccccc1"
+    ]
+  },
+  {
+    "name": "alcohol_to_carbonyl",
+    "reaction_class": "C_oxidation",
+    "smirks": "[C;X4;H1,H2:1][OX2H]>>[C:1]=[OX1]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "ADH",
+      "CYP"
+    ],
+    "prior": 0.7,
+    "probe": [
+      "OCc1ccccc1",
+      "O=Cc1ccccc1"
+    ]
+  },
+  {
+    "name": "aldehyde_to_acid",
+    "reaction_class": "C_oxidation",
+    "smirks": "[CX3;H1:1]=[OX1:2]>>[C:1](=[O:2])[OX2H]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "ALDH"
+    ],
+    "prior": 0.7,
+    "probe": [
+      "O=Cc1ccccc1",
+      "OC(=O)c1ccccc1"
+    ]
+  },
+  {
+    "name": "epoxidation",
+    "reaction_class": "epoxidation",
+    "smirks": "[C;X3:1]=[C;X3:2]>>[C:1]1[C:2][OX2]1",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 0.4,
+    "probe": [
+      "C=Cc1ccccc1",
+      "C1OC1c1ccccc1"
+    ]
+  },
+  {
+    "name": "desaturation",
+    "reaction_class": "desaturation",
+    "smirks": "[C;X4;H1,H2,H3:1][C;X4;H1,H2,H3:2]>>[C:1]=[C:2]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 0.2,
+    "probe": [
+      "CCCC",
+      "CC=CC"
+    ]
+  },
+  {
+    "name": "oxidative_deamination",
+    "reaction_class": "N_dealkylation",
+    "smirks": "[C;X4;H1,H2:1][NX3;H2:2]>>[C:1]=[OX1].[N:2]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "MAO",
+      "CYP"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "NCCc1ccccc1",
+      "O=CCc1ccccc1"
+    ]
+  },
+  {
+    "name": "nitro_reduction",
+    "reaction_class": "reduction",
+    "smirks": "[NX3+:1](=[OX1:2])[OX1-:3]>>[NX3;H2:1]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "NTR",
+      "CYP"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "[O-][N+](=O)c1ccccc1",
+      "Nc1ccccc1"
+    ]
+  },
+  {
+    "name": "ester_hydrolysis",
+    "reaction_class": "hydrolysis",
+    "smirks": "[CX3:1](=[OX1:2])[OX2:3][#6:4]>>[C:1](=[O:2])[OX2H].[OX2H][#6:4]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CES"
+    ],
+    "prior": 1.0,
+    "probe": [
+      "CC(=O)OCc1ccccc1",
+      "OCc1ccccc1"
+    ]
+  },
+  {
+    "name": "amide_hydrolysis",
+    "reaction_class": "hydrolysis",
+    "smirks": "[CX3:1](=[OX1:2])[NX3:3]>>[C:1](=[O:2])[OX2H].[N:3]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CES",
+      "AMDase"
+    ],
+    "prior": 0.4,
+    "probe": [
+      "CC(=O)Nc1ccccc1",
+      "Nc1ccccc1"
+    ]
+  },
+  {
+    "name": "dehalogenation",
+    "reaction_class": "reduction",
+    "smirks": "[c:1][F,Cl,Br,I:2]>>[c:1][OX2H]",
+    "site_map": 1,
+    "phase": 1,
+    "enzymes": [
+      "CYP"
+    ],
+    "prior": 0.15,
+    "probe": [
+      "Clc1ccccc1",
+      "Oc1ccccc1"
+    ]
+  },
+  {
+    "name": "o_glucuronidation",
+    "reaction_class": "glucuronidation",
+    "smirks": "[OX2H;$([OX2H][#6]):1]>>[O:1][C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "UGT"
+    ],
+    "prior": 2.2,
+    "probe": [
+      "Oc1ccccc1",
+      "c1ccccc1O[C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O"
+    ]
+  },
+  {
+    "name": "n_glucuronidation",
+    "reaction_class": "glucuronidation",
+    "smirks": "[NX3;H1,H2;!$(N[#6,#16]=[#8,#16,#7]):1]>>[N:1][C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "UGT"
+    ],
+    "prior": 0.6,
+    "probe": [
+      "Nc1ccccc1",
+      "c1ccccc1N[C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O"
+    ]
+  },
+  {
+    "name": "acyl_glucuronidation",
+    "reaction_class": "glucuronidation",
+    "smirks": "[CX3:1](=[OX1:3])[OX2H:2]>>[C:1](=[O:3])[O:2][C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O",
+    "site_map": 2,
+    "phase": 2,
+    "enzymes": [
+      "UGT"
+    ],
+    "prior": 0.9,
+    "probe": [
+      "OC(=O)c1ccccc1",
+      "O=C(c1ccccc1)O[C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O"
+    ]
+  },
+  {
+    "name": "n_glucuronidation_aromatic",
+    "reaction_class": "glucuronidation",
+    "smirks": "[nX3;H1:1]>>[n:1][C@@H]1O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]1O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "UGT"
+    ],
+    "prior": 0.2,
+    "probe": [
+      "c1cc[nH]c1",
+      "c1ccn([C@@H]2O[C@@H](C(=O)O)[C@H](O)[C@@H](O)[C@H]2O)c1"
+    ]
+  },
+  {
+    "name": "o_sulfation",
+    "reaction_class": "sulfation",
+    "smirks": "[OX2H;$([OX2H][#6]):1]>>[O:1]S(=O)(=O)O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "SULT"
+    ],
+    "prior": 1.3,
+    "probe": [
+      "Oc1ccccc1",
+      "O=S(=O)(O)Oc1ccccc1"
+    ]
+  },
+  {
+    "name": "n_sulfation",
+    "reaction_class": "sulfation",
+    "smirks": "[NX3;H1,H2;!$(N[#6,#16]=[#8,#16,#7]):1]>>[N:1]S(=O)(=O)O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "SULT"
+    ],
+    "prior": 0.2,
+    "probe": [
+      "Nc1ccccc1",
+      "O=S(=O)(O)Nc1ccccc1"
+    ]
+  },
+  {
+    "name": "n_acetylation",
+    "reaction_class": "acetylation",
+    "smirks": "[NX3;H1,H2;!$(N[#6,#16]=[#8,#16,#7]):1]>>[N:1]C(C)=O",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "NAT"
+    ],
+    "prior": 0.6,
+    "probe": [
+      "Nc1ccccc1",
+      "CC(=O)Nc1ccccc1"
+    ]
+  },
+  {
+    "name": "o_methylation",
+    "reaction_class": "methylation",
+    "smirks": "[OX2H:1][c:2][c:3][OX2H:4]>>[O:1](C)[c:2][c:3][O:4]",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "COMT"
+    ],
+    "prior": 0.4,
+    "probe": [
+      "Oc1ccccc1O",
+      "COc1ccccc1O"
+    ]
+  },
+  {
+    "name": "gsh_conjugation_epoxide",
+    "reaction_class": "gsh_conjugation",
+    "smirks": "[C;X4:1]1[OX2:3][C;X4:2]1>>[C:1]([OX2H:3])[C:2]SC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)NCC(=O)O",
+    "site_map": 2,
+    "phase": 2,
+    "enzymes": [
+      "GST"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "C1OC1c1ccccc1",
+      "OCC(c1ccccc1)SC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)NCC(=O)O"
+    ]
+  },
+  {
+    "name": "gsh_conjugation_michael",
+    "reaction_class": "gsh_conjugation",
+    "smirks": "[C;X3:1]=[C;X3:2][CX3:3]=[OX1:4]>>[C:1][C:2](SC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)NCC(=O)O)[C:3]=[O:4]",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "GST"
+    ],
+    "prior": 0.2,
+    "probe": [
+      "C=CC(=O)c1ccccc1",
+      "O=C(c1ccccc1)C(SC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)NCC(=O)O)C"
+    ]
+  },
+  {
+    "name": "glycine_conjugation",
+    "reaction_class": "amino_acid_conjugation",
+    "smirks": "[CX3:1](=[OX1:2])[OX2H]>>[C:1](=[O:2])NCC(=O)[OX2H]",
+    "site_map": 1,
+    "phase": 2,
+    "enzymes": [
+      "GLYAT"
+    ],
+    "prior": 0.3,
+    "probe": [
+      "OC(=O)c1ccccc1",
+      "OC(=O)CNC(=O)c1ccccc1"
+    ]
+  }
+]

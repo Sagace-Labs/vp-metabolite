@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "pathway": "metabolite",
+  "version": "v1",
+  "protocols": {
+    "metabolite-v1-fixed-similarity@1": {
+      "protocol_id": "metabolite-v1-fixed-similarity@1",
+      "dataset_sha256": "af54013d42b79022a675af94d63a6d879f663c630f803ce5e7324ce1c0f2854f",
+      "dataset": "Five-source xenobiotic parent-metabolite relationships",
+      "evaluated": "2026-10-01",
+      "n": {
+        "train": 1474,
+        "val": 0,
+        "test": 407
+      },
+      "folds": [
+        {
+          "seed": 0,
+          "n_train": 1474,
+          "n_val": 0,
+          "n_test": 407,
+          "mined_templates": 255,
+          "edit_types": 31
+        }
+      ],
+      "test": {
+        "recall_at_1": {
+          "mean": 0.20843686070958797,
+          "std": 0.0,
+          "per_seed": [
+            0.208437
+          ],
+          "n_finite": 1
+        },
+        "recall_at_5": {
+          "mean": 0.5404718472900292,
+          "std": 0.0,
+          "per_seed": [
+            0.540472
+          ],
+          "n_finite": 1
+        },
+        "recall_at_10": {
+          "mean": 0.6279012483557938,
+          "std": 0.0,
+          "per_seed": [
+            0.627901
+          ],
+          "n_finite": 1
+        },
+        "recall_at_20": {
+          "mean": 0.7150293741202832,
+          "std": 0.0,
+          "per_seed": [
+            0.715029
+          ],
+          "n_finite": 1
+        },
+        "reachable_recall": {
+          "mean": 0.7859648609648611,
+          "std": 0.0,
+          "per_seed": [
+            0.785965
+          ],
+          "n_finite": 1
+        },
+        "candidates_per_parent": {
+          "mean": 283.9361179361179,
+          "std": 0.0,
+          "per_seed": [
+            283.936118
+          ],
+          "n_finite": 1
+        },
+        "prior_recall_at_10": {
+          "mean": 0.44831253922163017,
+          "std": 0.0,
+          "per_seed": [
+            0.448313
+          ],
+          "n_finite": 1
+        }
+      }
+    }
+  }
+}

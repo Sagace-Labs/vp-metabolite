@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "vp-metabolite: candidate xenobiotic metabolite ranking"
+message: "If you use this package, cite it and the attributed rule and data sources."
+type: software
+authors:
+  - name: "Sagace Labs"
+repository-code: "https://github.com/Sagace-Labs/vp-metabolite"
+license: GPL-3.0-only
+version: "1.0.0"
+abstract: >-
+  A ranked candidate metabolite structure generator and forest scorer for
+  xenobiotic parent molecules.
+keywords:
+  - metabolite prediction
+  - xenobiotic metabolism
+  - cheminformatics

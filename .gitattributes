@@ -1,0 +1,2 @@
+* -text
+src/vp_metabolite/versions/**/weights.joblib filter=lfs diff=lfs merge=lfs -text

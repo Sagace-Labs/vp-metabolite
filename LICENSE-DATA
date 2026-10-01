@@ -1,0 +1,48 @@
+Data and transformation-rule terms
+==================================
+
+The processed directed-pair table under data/release/ is redistributed under
+CC BY-SA 4.0:
+  https://creativecommons.org/licenses/by-sa/4.0/
+Source snapshots retain their source-specific terms below. The release manifest
+pins source-file and table hashes. The table standardises structures and retains
+per-assertion provenance. Attribute each source below.
+
+MetXBioDB standalone — CC BY 4.0
+  https://zenodo.org/records/19365341
+  Parent and product InChI structures.
+
+ChEMBL metabolism 34 — CC BY-SA 3.0
+  https://chembl.gitbook.io/chembl-interface-documentation/about
+  Zdrazil B, Felix E, Hunter F, et al. Nucleic Acids Research 2024,
+  52(D1):D1180-D1192. doi:10.1093/nar/gkad1004
+
+e-Drug3D — CC BY 4.0
+  https://zenodo.org/records/22831843
+  Drug structures and directed metabolite links.
+
+MetSim observed references — CC BY 4.0
+  https://zenodo.org/records/15064945
+  Groff L, Williams A, Shah I, Patlewicz G. Chem. Res. Toxicol. 2024.
+  doi:10.1021/acs.chemrestox.3c00398
+
+NCATS Inxight/GSRS — public-domain facts under the NCATS statement
+  https://drugs.ncats.io/
+  Siramshetty et al. Nucleic Acids Research 2022. doi:10.1093/nar/gkab918
+
+The bundled phase I and II SyGMa rule files and GLORYx rule file are GPL-3.0.
+Their source and author notices are preserved by this attribution; the full
+GPL-3.0 text is in LICENSE. The files are:
+  src/vp_metabolite/resources/sygma_phase1.txt
+  src/vp_metabolite/resources/sygma_phase2.txt
+  src/vp_metabolite/resources/gloryx_rules.csv
+Sources:
+  https://github.com/3D-e-Chem/sygma
+  https://github.com/christinadebruynkops/GLORYx
+For the SyGMa rules cite Ridder L and Wagener M, ChemMedChem 2008,
+doi:10.1002/cmdc.200700312. For the GLORYx rules cite de Bruyn Kops C et al.,
+Chem. Res. Toxicol. 2021, doi:10.1021/acs.chemrestox.0c00224.
+
+The curated.json transformation set was authored for this package and is also
+distributed under GPL-3.0. A rule describes a candidate transformation, not
+evidence that the product forms in a particular biological system.

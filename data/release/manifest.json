@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "version": "v1",
+  "builder": {
+    "version": "0.1.0",
+    "python": "3.12.9",
+    "rdkit": "2026.03.6"
+  },
+  "identity": "largest-fragment InChIKey connectivity block; directed pair",
+  "sources": {
+    "metxbiodb.csv": {
+      "url": "https://zenodo.org/records/19365341",
+      "retrieved": "2026-09-20",
+      "release": "record 19365341",
+      "licence": "CC-BY-4.0",
+      "sha256": "f1a2661762db03d913e707a12d7a38ea960cfe8ee2ab1da836812b3d550b22ec"
+    },
+    "chembl_pairs.json": {
+      "url": "https://www.ebi.ac.uk/chembl/api/data/metabolism",
+      "retrieved": "2026-09-20",
+      "release": "ChEMBL 34",
+      "licence": "CC-BY-SA-3.0",
+      "sha256": "e0c4e91e2d15d76ed70fb126989b626233d7de828012cbc56cf597d30ae12b5f"
+    },
+    "e-Drug3D_2162.zip": {
+      "url": "https://zenodo.org/records/22831843",
+      "retrieved": "2026-09-20",
+      "release": "record 22831843",
+      "licence": "CC-BY-4.0",
+      "sha256": "453c8ad79b86a30b41f0a0a1f6676f05986e87bec9fbc16d1510d6481cfaefac"
+    },
+    "edrug3d_pk.csv": {
+      "url": "https://zenodo.org/records/22831843",
+      "retrieved": "2026-09-20",
+      "release": "record 22831843",
+      "licence": "CC-BY-4.0",
+      "sha256": "70cdca5812e295e3c14487958ac018703890fd8700d2add5c5cc12c20e9ccc61"
+    },
+    "smpdb_jcim_valid_aggregate_112parents.json": {
+      "url": "https://zenodo.org/records/15064945",
+      "retrieved": "2026-09-20",
+      "release": "record 15064945",
+      "licence": "CC-BY-4.0",
+      "sha256": "a36d646f8770513653acc3af45804ea9b08b6772573c330c413548c135fd7304"
+    },
+    "inxight_records.json": {
+      "url": "https://drugs.ncats.io/api/v1/substances/search",
+      "retrieved": "2026-09-21",
+      "release": "Inxight harvest archived 2026-09-21",
+      "licence": "Public-domain facts, per NCATS Inxight statement",
+      "sha256": "acf41aed49f33694b598442dc8531fc4b01221d4a91b5456d0fc88de5d1eabbe"
+    }
+  },
+  "source_observations": {
+    "metxbiodb": 2122,
+    "chembl": 1733,
+    "edrug3d": 788,
+    "metsim": 456,
+    "inxight": 9619
+  },
+  "report": {
+    "observations": 13695,
+    "unique_pairs": 7081,
+    "unique_parents": 3117,
+    "pairs_in_multiple_sources": 921
+  },
+  "files": {
+    "pairs.csv": {
+      "sha256": "af54013d42b79022a675af94d63a6d879f663c630f803ce5e7324ce1c0f2854f"
+    },
+    "observations.csv": {
+      "sha256": "c442e27d6ba02d629ad8b0a9e1387243dcda7b68320595fd6022c1138c482517"
+    },
+    "sources/metxbiodb.csv": {
+      "sha256": "f1a2661762db03d913e707a12d7a38ea960cfe8ee2ab1da836812b3d550b22ec"
+    },
+    "sources/chembl_pairs.json": {
+      "sha256": "e0c4e91e2d15d76ed70fb126989b626233d7de828012cbc56cf597d30ae12b5f"
+    },
+    "sources/e-Drug3D_2162.zip": {
+      "sha256": "453c8ad79b86a30b41f0a0a1f6676f05986e87bec9fbc16d1510d6481cfaefac"
+    },
+    "sources/edrug3d_pk.csv": {
+      "sha256": "70cdca5812e295e3c14487958ac018703890fd8700d2add5c5cc12c20e9ccc61"
+    },
+    "sources/smpdb_jcim_valid_aggregate_112parents.json": {
+      "sha256": "a36d646f8770513653acc3af45804ea9b08b6772573c330c413548c135fd7304"
+    },
+    "sources/inxight_records.json": {
+      "sha256": "acf41aed49f33694b598442dc8531fc4b01221d4a91b5456d0fc88de5d1eabbe"
+    },
+    "sources/sources.json": {
+      "sha256": "6f6d19438f7da6360b38a4256a847b9ba618897804c587148633f32994597cb3"
+    }
+  }
+}

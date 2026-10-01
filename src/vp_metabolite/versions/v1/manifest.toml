@@ -1,0 +1,46 @@
+schema = 1
+pathway = "metabolite"
+version = "v1"
+released = "2026-10-01"
+reason = "First release of ranked candidate xenobiotic metabolite structures from five attributed directed-pair sources"
+
+[signature]
+version = 1
+inputs = ["smiles"]
+
+[[signature.outputs]]
+name = "metabolite_score"
+dtype = "float32"
+range = [0.0, 1.0]
+semantics = "Forest ranking score for a proposed metabolite; not a formation probability"
+missing = "An invalid input or a molecule with no generated candidates has no rows"
+
+[dataset]
+name = "Five-source xenobiotic parent-metabolite relationships"
+source = "MetXBioDB, ChEMBL metabolism, e-Drug3D, observed MetSim and NCATS Inxight/GSRS"
+retrieved = "2026-09-21"
+licence = "CC-BY-SA-4.0"
+redistributable = true
+path = "data/release/pairs.csv"
+format = "directed-pairs@1"
+unit = "directed pairs"
+sha256 = "af54013d42b79022a675af94d63a6d879f663c630f803ce5e7324ce1c0f2854f"
+n_rows = 7081
+fetch = "python -m vp_metabolite.data verify"
+
+[model]
+family = "verified-rule and graph-edit generator with random-forest ranker"
+features = "route counts, product descriptors, parent-product deltas and difference fingerprint"
+fit = "all 3117 parents; 1,200 train-pair radius-one template sample and train-only edit vocabulary"
+weights = "weights.joblib"
+sha256 = "40b5b1ee3e72a65c65d60a52ce30ccef829ea6a61eae8f8a944c675b60678c83"
+
+[protocol]
+id = "metabolite-v1-fixed-similarity@1"
+provider = "vp-core"
+core_version = "1.7.0"
+
+[provenance]
+python = "3.11.11"
+rdkit = "2026.03.5"
+sklearn = "1.9.0"

@@ -1,0 +1,38 @@
+{
+  "metxbiodb.csv": {
+    "url": "https://zenodo.org/records/19365341",
+    "retrieved": "2026-09-20",
+    "release": "record 19365341",
+    "licence": "CC-BY-4.0"
+  },
+  "chembl_pairs.json": {
+    "url": "https://www.ebi.ac.uk/chembl/api/data/metabolism",
+    "retrieved": "2026-09-20",
+    "release": "ChEMBL 34",
+    "licence": "CC-BY-SA-3.0"
+  },
+  "e-Drug3D_2162.zip": {
+    "url": "https://zenodo.org/records/22831843",
+    "retrieved": "2026-09-20",
+    "release": "record 22831843",
+    "licence": "CC-BY-4.0"
+  },
+  "edrug3d_pk.csv": {
+    "url": "https://zenodo.org/records/22831843",
+    "retrieved": "2026-09-20",
+    "release": "record 22831843",
+    "licence": "CC-BY-4.0"
+  },
+  "smpdb_jcim_valid_aggregate_112parents.json": {
+    "url": "https://zenodo.org/records/15064945",
+    "retrieved": "2026-09-20",
+    "release": "record 15064945",
+    "licence": "CC-BY-4.0"
+  },
+  "inxight_records.json": {
+    "url": "https://drugs.ncats.io/api/v1/substances/search",
+    "retrieved": "2026-09-21",
+    "release": "Inxight harvest archived 2026-09-21",
+    "licence": "Public-domain facts, per NCATS Inxight statement"
+  }
+}
